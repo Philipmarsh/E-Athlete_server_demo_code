@@ -1,0 +1,187 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<!--<div class="testing">-->
+
+<!--</div>-->
+<div class="big-box">
+    <img src="{% static 'home/title_image.png' %}" alt="intense looking athlete" class="box-image">
+    <div class="bottom-right">
+        <h1 class="title centered-title">E-Athlete Ltd</h1>
+        <h3 class="sub-title title centered-title">Hi, Welcome to the team</h3>
+        <div class="centered-75">
+            <p class="minor-text">Download our E-Athlete app today and start your path to achieve your goals.
+                E-Athlete has been developed by two high-level fencers that decided to track their training to improve
+                their
+                performance and achieve their short terms as well as long terms goals.</p>
+        </div>
+       <div class="centered-title">
+           <input type="button" value="Test the app now" class="title join-button"
+                  onClick="document.getElementById('tester-form').scrollIntoView();">
+       </div>
+    </div>
+</div>
+<div class="height-divider-30"></div>
+<h1 class="centered-title title">How we can help you</h1>
+<div class="flex-display">
+    <div class="info-box">
+        <div class="flex-align-center">
+            <img src="{% static 'home/coach.png' %}" alt="coach icon" class="image-icon">
+            <h1 class="section-title title">E-Coach</h1>
+        </div>
+        <h3 class="sub-title title ">Because who knows your athlete better than you?</h3>
+        <ul class="feature-list">
+            <li class="feature-list-item">
+                Be able to view all your athletes and their data in a simple click. Get instant feedback from their
+                sessions to improve their training plans.
+            </li>
+            <li class="feature-list-item">
+                Keep your athletes accountable: create a path to success, monitor their progression, and understand
+                their feelings.
+            </li>
+            <li class="feature-list-item">
+                Customise your training and objectives: you know your sport, and what needs to be done.
+            </li>
+        </ul>
+    </div>
+    <div class="info-box">
+        <div class="flex-align-center">
+            <img src="{% static 'home/sportsman.png' %}" alt="athlete icon" class="image-icon">
+            <h1 class="section-title title">E-Athlete</h1>
+        </div>
+        <h3 class="sub-title title">Get a head start on the competition by introducing our systemic approach to
+            training.</h3>
+        <ul class="feature-list">
+            <li class="feature-list-item">
+                Our training diary is structured to give you a holistic vision of your sessions, day-to-day
+                feelings,
+                as well as previous and upcoming competitions. Easily reviewed by our database and graphing
+                software,
+                tracking made easy. Don't like our metrics? feel free to build and track your own data.
+            </li>
+            <li class="feature-list-item">
+                Keep yourself accountable by linking your profile to your team.
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="height-divider-150"></div>
+
+<div class="background-shape-2">
+    <div class="undo-skew">
+        <div class="height-divider-30"></div>
+        <h1 class="centered-title title white big-boi-writing">Who we are</h1>
+        <div class="flex-display">
+            <div class="info-box">
+                <img src="{% static 'home/images/IMG_0287.JPG' %}" alt="Elliott Grover cheering on his team"
+                     class="profile-photo">
+            </div>
+            <div class="info-box">
+                <div class="h-centered-75">
+                    <h2 class="white title">Elliott Grover</h2>
+                    <p class="white minor-text justified">
+                        Our CEO Elliott Grover is currently UK ranked no.2 and is training in Germany. An incredibly
+                        disorganised person at heart, Elliott wanted to create a training diary that it was possible for
+                        even him to stick too! So in that sense E-Athlete is the training diary for those who can’t
+                        stick to training diaries. Whether it’s as a student-athlete at Royal Holloway or a career in
+                        Finance, Elliott knows that efficiency is key and that is the solution to the problem that
+                        E-Athlete seeks to solve. Elliott’s hobbies are learning to code and listening to how much
+                        people are enjoying the product.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-reverse">
+
+            <div class="info-box">
+                <div class="h-centered-75">
+                    <h2 class="white title">Philip Marsh</h2>
+                    <p class="white minor-text justified">
+
+                        Having graduated in 2018 from Bristol University with a Masters degree in chemistry, I then went
+                        to Italy to train at a fencing club in Milan for two years. During this time I picked up the
+                        necessary skills to create a software company. I also realised there was a real lack of software
+                        solutions for tracking training for my sport. When Elliott came to me with the idea to make a
+                        training diary app, it seemed like a logical step for me to take.
+                    </p>
+                </div>
+            </div>
+            <div class="info-box">
+                <img src="{% static 'home/images/philip_photo.png' %}" alt="Philip Marsh"
+                     class="profile-photo">
+            </div>
+        </div>
+    </div>
+    <div class="height-divider-30"></div>
+</div>
+<div class="height-divider-30"></div>
+
+<h1 class="centered-title title">FAQ'S</h1>
+<div class="flex-display">
+    <div class="info-box">
+        <h1 class="title">
+            I’ve seen other Apps that serve similar purposes. What makes yours the best?
+        </h1>
+        <p class="minor-text">
+            At E-Athlete you are in control. You can measure what you need to measure to improve your performance.
+            E-Athlete approaches your sport as holistically as you do. It puts your Competition, your Diary, your
+            Analysis and all those who you have to support you in one place.
+        </p>
+    </div>
+    <div class="info-box">
+        <h1 class="title">
+            How often are there updates to the App?
+        </h1>
+        <p class="minor-text">
+            The App is regularly updated with new and interesting features on a monthly basis! Ensuring that you will be
+            able to find the features that are right for you!
+            Like our athletes, we are always on the lookout for ways that give us an edge over our opponents. Rest
+            assured your performance is safe with us
+        </p>
+    </div>
+</div>
+<div class="flex-display">
+    <div class="info-box">
+        <h1 class="title">
+            It all sounds great, but what does this App actually do?
+        </h1>
+        <p class="minor-text">
+            This app will be the last diary that you every buy.
+            Data designed to be inputted within 10 minutes, making it quick and easy for the busy athlete. That you will
+            be easily able to reflect upon and digest.
+            We give you the tools you need to build a better athlete. What you do with it is up to you!
+        </p>
+    </div>
+    <div class="info-box">
+        <h1 class="title">
+            I'm new to ideas of Sports Performance, is this the App for me?
+        </h1>
+        <p class="minor-text">
+            Everyone who has an fitness goal is an athlete. At E-Athlete we take this philosophy to heart. You'll find
+            all the training material you need on our website as well as instructional navigation on our app to get you
+            going and training the way you deserve to train.
+        </p>
+    </div>
+</div>
+<div class="height-divider-30"></div>
+<h1 class=" centered-title title">Interested? Sign up for testing!</h1>
+
+<div class="centered-title" id="tester-form">
+    <form method="post" class="form-layout">
+        {% csrf_token %}
+        {{ form.first_name }}<br>
+        {{ form.last_name }}<br>
+        {{ form.email_address }}<br>
+        {{ form.operating_system }}<br>
+        <label class="minor-text form-size ">I have read and accept the terms of the<br> <a href="{% url 'nda' %}">Non
+            Disclosure Agreement</a>
+        </label>
+        {{ form.nda_check }}<br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="height-divider-30"></div>
+
+
+{% endblock content %}

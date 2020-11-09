@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="centered-title title">Our Blog</h1>
+<div class="centered-50">
+    {% for blog_post in object_list %}
+    <h2 class="title">{{ blog_post.title }}</h2>
+    <h5 class="minor-text">{{ blog_post.author }}</h5>
+    <h6 class="minor text">{{ blog_post.created}}</h6>
+    <div class="minor-text">{{ blog_post.post|safe }}</div>
+    {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>E-Athlete</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5efce4be88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+
+
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar" id="full-navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="{% url 'homepage' %}" class="logo">
+        <div>
+            <img src="{% static 'home/images/logo_only.png' %}" class="logo-image">
+            <img src="{% static 'home/images/logo_lettering.png' %}" class="logo-text">
+        </div>
+    </a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="{% url 'homepage' %}" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'products' %}" class="nav-links">Products</a>
+        </li>
+        <li>
+            <a href="{% url 'about-us' %}" class="nav-links">About Us</a>
+        </li>
+        <li>
+            <a href="{% url 'contact-us' %}" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+            <a href="{% url 'blog' %}" class="nav-links">Blog</a>
+        </li>
+    </ul>
+</nav>
+<div class="below-nav"></div>
+{% include 'home/messages.html' %}
+{% block content %}
+{% endblock content %}
+
+
+<footer class="">
+    <ul class="social-list page-footer">
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f social-item facebook"></i></a></li>
+        <li><a href="https://www.facebook.com"><i class="fab fa-twitter social-item twitter"></i></a></li>
+        <li><a href="https://www.facebook.com"><i class="fab fa-instagram social-item instagram"></i></a></li>
+    </ul>
+    <a href="{% url 'privacy-policy' %}" class="footer-link social-list minor-text"><p>Privacy Policy</p></a>
+    <div class="height-divider"></div>
+    <h4 class="social-list title">Site by Philip Marsh</h4>
+
+    <h5 class="social-list title">Icons made by <a href="https://www.flaticon.com/authors/flat-icons"
+                                                   title="Flat Icons">Flat Icons</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h5>
+
+    <div class="height-divider-20"></div>
+
+
+</footer>
+<script src="{% static 'home/base.js' %}"></script>
+</body>
+</html>
